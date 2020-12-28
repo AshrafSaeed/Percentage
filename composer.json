@@ -1,0 +1,36 @@
+{
+    "name": "ashrafsaeed/laravel-percentage",
+    "description": "calculate persentage in laravel",
+    "keywords": ["laravel", "percentage", "calculation", "php", "laravel", "artisan"],
+    "type": "library",  
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2.5|^8.0"
+    },
+    "require-dev": {
+        "php-school/cli-menu": "^4.1"
+    },
+    "license": "MTI", 
+    "authors": [
+        {
+            "name": "Muhammaf Ashraf",
+            "email": "avanix.sol@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AshrafSaeed\\Percentage\\": "src/" 
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AshrafSaeed\\Percentage\\ServiceProvider\\PercentageServiceProvider"
+            ],
+            "aliases": {
+                "Percentage": "AshrafSaeed\\Percentage\\Facades\\Percentage"
+            }
+        }
+    }
+}
